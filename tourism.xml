@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <?xml-model href="tourism.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+ <products >
+    <product>
+      <id>1111</id>
+      <name>agasthya</name>
+      <price>1100000</price>
+      <quantity>5</quantity>
+      <category>religious</category>
+    </product>
+    <product>
+      <id>2222</id>
+      <name>maja</name>
+      <price>5000000</price>
+      <quantity>7</quantity>
+      <category>fun</category>
+    </product>
+    <product>
+      <id>p</id>
+      <name>thrillo</name>
+      <price>730000</price>
+      <quantity>1</quantity>
+      <category>adventure</category>
+    </product>
+  </products>
