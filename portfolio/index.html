@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Clement - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+        body {
+            background-color: rgb(2, 2, 48);
+            color: white;
+            font-family: 'poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(66, 38, 190);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white
+        }
+
+        nav ul li a:hover {
+            color: rgb(127, 127, 228);
+            font-size: 2rem;
+        }
+
+        main hr {
+            border: 0;
+            background-color: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+
+
+        }
+
+        .firstSection>div {
+            width: 30%;
+
+        }
+
+        .leftSection {
+
+            font-size: 3rem;
+        }
+        .leftSection .btn{
+            padding: 12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointers;
+
+        }
+
+        .rightSection img {
+            width: 80%;
+            margin: 50px 0;
+        }
+
+        .purple {
+            color: rgb(158, 91, 220);
+        }
+
+        .text-gray {
+            color: gray
+        }
+
+        #element {
+            color: rgb(158, 91, 220);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 77vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 140px;
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+            font-size: 16px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 11px;
+
+        }
+        footer{
+            background-color: #0e0e1a;
+            
+        }
+        .footer{
+            display: flex;
+            margin: 23px 122px;
+            justify-content: space-evenly;
+        }
+        .footer ul{
+            list-style-type: none;
+        }
+        .footer > div{
+            width: 223 px;
+
+        } 
+        footer .footer-rights{
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Clement's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="aboutme.html">About</a></li>
+                   
+                 
+                    <li><a href="/contactme.html">Contact Me</a></li>
+                    <li><a href="parallax.html">Parallax</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Clement
+
+                </span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png" alt="">
+            </div>
+
+        </section>
+        <hr>
+
+        <section class="secondsection">
+            <span class="text-gray">what have i done so far</span>
+            <h1>work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">
+                        HTML developer - pintrest (2019-2020)
+                    </div>
+                    <div class="vertical-desc">
+                        “I graduated one years ago with a degree in computer science and have since worked as a front-end engineer. I have a lot of experience with HTML, along with CSS and JavaScript. I find these languages complement each other and help me keep the main newsfeed looking fresh and sharp. I also take professional development courses regularly, and I’m a consistent contributor to online code repositories.”
+                    </div>
+                </div>
+            
+            
+                    <div class="vertical">
+                        <img class="image-top" src="pngwing.com (2).png" alt="">
+                        <div class="vertical-title">
+                            Node.JS developer(2020-2021)
+                        </div>
+                        <div class="vertical-desc">
+                            I am Front-End Web Developer. It's been 1 years, I’m working as web developer.I have developed many website and also provided my services to college students by getting their projects ready ASAP as a freelancer I have been part of some very good web design projects using node.js
+                        </div>
+                    </div>
+
+                    <div class="vertical">
+                        <img class="image-top" src="pngwing.com (1).png" alt="">
+                        <div class="vertical-title">
+                            HTML developer - instagram(2021-2022)
+                        </div>
+                        <div class="vertical-desc">
+                            I am Front-End Web Developer. It's been 1 years, I’m working as web developer.I have developed many website and also provided my services to college students by getting their projects ready ASAP as a freelancer I have been part of some very good web design projects using node.js
+                        </div>
+                    </div>
+
+                    <div class="vertical">
+                        <img class="image-top" src="pngwing.com (3).png" alt="">
+                        <div class="vertical-title">
+                            Node.JS developer - twitter (2022-2023)
+                        </div>
+                        <div class="vertical-desc">
+                            I am Front-End Web Developer. It's been 1 years, I’m working as web developer.I have developed many website and also provided my services to college students by getting their projects ready ASAP as a freelancer I have been part of some very good web design projects using node.js
+                        </div>
+                    </div>
+            
+               
+            </div>
+
+
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Clements  Developer portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>home</li>
+                    <li>about</li>
+                    <li>services</li>
+                    <li>contact</li>
+                    
+                </ul>
+            </div>
+            <div class="footer-third">
+            <ul>
+                <li>home</li>
+                <li>about</li>
+                <li>services</li>
+                <li>contact</li>
+                
+            </ul>
+        </div>
+            <div class="footer-fourth">
+            <ul>
+                <li>home</li>
+                <li>about</li>
+                <li>services</li>
+                <li>contact</li>
+                
+            </ul>
+        </div>
+    </div>
+    <div class="footer-rights">
+       Copyright  &#169; www.clementsportfolio.com | All rights reserved
+    </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['web developer', 'graphic designer', 'video editor'],
+            typeSpeed: 50,
+        });
+    </script>
+
+
+
+</body>
+
+
+</html>

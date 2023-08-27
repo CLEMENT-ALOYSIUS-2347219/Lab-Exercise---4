@@ -1,0 +1,110 @@
+<html>
+
+<head>
+    <title>Inauguration of Hotel Mystic's</title>
+    <link rel="stylesheet" href="4thstyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script type='text/javascript'>
+        function GetMap() {
+            var map = new Microsoft.Maps.Map('#myMap', {
+                credentials: 'AjVNtCmn1awGs5LKSmPZohoV-Pjz6hmJ6OP06o5F4dc33KIcvEpcwylV5_ez1S9H'
+            });
+
+            //Request the user's location
+            navigator.geolocation.getCurrentPosition(function (position) {
+                var loc = new Microsoft.Maps.Location(
+                    position.coords.latitude,
+                    position.coords.longitude);
+
+                //Add a pushpin at the user's location.
+                var pin = new Microsoft.Maps.Pushpin(loc);
+                map.entities.push(pin);
+
+                //Center the map on the user's location.
+                map.setView({ center: loc, zoom: 15 });
+            });
+        }
+    </script>
+    <script type='text/javascript' src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap' async defer></script>
+    
+</head>
+<header>
+<h1>Inauguration of Hotel Mystic</h1>
+</header>
+<div class=navbar>
+    <a href="#section1">Home</a>
+    <a href="#section2">About</a>
+    <a href="#section3">Map</a>
+</div>
+</header>
+<body>
+
+    <img class="logoimage" src="restaurant-logos-11551057140mksx6c81dz.png" alt="logo">
+    <div class="hero-container" id="section1">
+        <div class="hero-text">
+            <h2>GRAND OPENING!</h2>
+            <p>Our first ever store in SG PALYA!</p>
+            <hr class="golden-line">
+            <p>#420, 69th Cross, Christ University | <time><br>Time - 9:30AM</br></time></p>
+        </div>
+    </div>
+
+    <section class="About-us" id="section2">
+        <h2>ABOUT US</h2>
+        <p>Welcome to Mystic's Restaurant, where culinary excellence meets a warm and inviting atmosphere. As we proudly
+            inaugurate our establishment, we invite you to embark on a gastronomic journey like no other. Our passion
+            for food is matched only by our commitment to impeccable service, ensuring that every visit to Mystic's is an
+            unforgettable experience. From the carefully curated menu, showcasing a fusion of global flavors, to the
+            thoughtfully designed ambiance that exudes both sophistication and comfort, we strive to create a haven for
+            food enthusiasts and connoisseurs alike. Join us as we celebrate the dawn of Mystic's Restaurant, a place
+            where flavors dance and memories are crafted with every exquisite bite.</p>
+    </section>
+    <br>
+    <div class="container-fluid" id="section3">
+        <h2 style="text-align: center; color: white;">MAP's</h2>
+        <div class=>
+            <div class="col-sm-4" style="background-color:rgb(157, 144, 68);"><br>
+
+                <iframe width="425" height="350"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=77.60301768779756%2C12.93247711730197%2C77.60646700859071%2C12.934293961214667&amp;layer=mapnik&amp;marker=12.933385540912099%2C77.60474234819412"
+                    style="border: 3px solid black; align-self: center;">
+                </iframe><br />
+            </div>
+            <div class="col-sm-4" style="background-color:rgb(58, 154, 71);">
+                <br>
+                <div id="myMap" style="position:relative;width:460px;height:350px;"></div>
+            </div>
+            <div class="col-sm-4" style="background-color:rgb(157, 144, 68);">.col-sm-4</div>
+        </div>
+    </div>
+    <script>
+     document.addEventListener("DOMContentLoaded", function() {
+    const navLinks = document.querySelectorAll(".navbar a   ");
+    
+    navLinks.forEach(function(link) {
+        link.addEventListener("click", function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute("href");
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                const targetPosition = targetElement.offsetTop;
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: "smooth"
+                });
+            }
+        });
+    });
+});
+
+    </script>
+</body>
+
+</html>
+
+----------------------------------------
+
+
+
