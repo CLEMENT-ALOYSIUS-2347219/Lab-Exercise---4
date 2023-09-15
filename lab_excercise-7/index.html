@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book List</title>
+    <style>
+        /* Style the body element with a background pattern */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    background-image: url('background-pattern.png');
+    background-repeat: repeat;
+}
+
+/* Style the main container for the button and book list */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Style the "Fetch Books" button with a gradient background */
+#fetchBooks {
+    background: linear-gradient(to bottom, #007bff, #0056b3);
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+#fetchBooks:hover {
+    background: linear-gradient(to bottom, #0056b3, #007bff);
+    transform: scale(1.05);
+}
+
+/* Style the book list */
+#bookList {
+    margin-top: 30px;
+    text-align: left;
+}
+
+/* Style the list items with a card-like appearance */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff;
+    padding: 15px;
+    margin: 15px 0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: transform 0.2s;
+}
+
+li:hover {
+    transform: scale(1.02);
+}
+
+/* Style the list item text */
+li p {
+    margin: 0;
+}
+
+/* Add a subtle background pattern to the list items */
+li:nth-child(even) {
+    background-image: url('pattern-light.png');
+    background-repeat: repeat;
+}
+
+li:nth-child(odd) {
+    background-image: url('pattern-dark.png');
+    background-repeat: repeat;
+}
+
+
+    </style>
+</head>
+<body>
+    
+    <button id="fetchBooks">Fetch Books</button>
+    <div id="bookList"></div>
+    <script src="script.js"></script>
+</body>
+</html>
